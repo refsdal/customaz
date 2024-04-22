@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6DA2800C-B43
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2F2D70DF-C4EB-4F40-8C96-D992028CF93A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customaz.Host", "src\Customaz.Host\Customaz.Host.csproj", "{17FB98ED-3172-4B1C-82F0-1510667E154E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,5 +16,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{17FB98ED-3172-4B1C-82F0-1510667E154E} = {6DA2800C-B43B-4E01-A7D1-1DA1CA5C968A}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17FB98ED-3172-4B1C-82F0-1510667E154E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17FB98ED-3172-4B1C-82F0-1510667E154E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17FB98ED-3172-4B1C-82F0-1510667E154E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17FB98ED-3172-4B1C-82F0-1510667E154E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
