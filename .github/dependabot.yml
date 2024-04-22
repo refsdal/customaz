@@ -1,0 +1,24 @@
+version: 2
+updates:
+  - package-ecosystem: "nuget"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "17:00"
+      timezone: "Europe/Oslo"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-patch"]
+    commit-message:
+      include: scope
+      prefix: "chore"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "17:00"
+      timezone: "Europe/Oslo"
+    commit-message:
+      include: scope
+      prefix: "ci"
