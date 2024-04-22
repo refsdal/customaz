@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
@@ -6,5 +6,19 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
+
+    <PropertyGroup>
+        <IsPublishable>true</IsPublishable>
+        <EnableSdkContainerSupport>true</EnableSdkContainerSupport>
+        <ContainerRepository>refsdal/customaz</ContainerRepository>
+        <PublishProfile>DefaultContainer</PublishProfile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ContainerLabel Include="org.opencontainers.image.title" Value="Customaz" />
+        <ContainerLabel Include="org.opencontainers.image.description" Value="An elegant CRM solution for most use cases" />
+        <ContainerLabel Include="org.opencontainers.image.source" Value="https://github.com/refsdal/customaz" />
+        <ContainerLabel Include="org.opencontainers.image.authors" Value="refsdal" />
+    </ItemGroup>
 
 </Project>
