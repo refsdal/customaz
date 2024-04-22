@@ -21,4 +21,9 @@
         <ContainerLabel Include="org.opencontainers.image.authors" Value="refsdal" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Customaz.Infrastructure\Customaz.Infrastructure.csproj" />
+      <ProjectReference Include="..\Customaz.Presentation\Customaz.Presentation.csproj" />
+    </ItemGroup>
+
 </Project>
