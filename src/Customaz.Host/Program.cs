@@ -1,3 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿var builder = WebApplication.CreateSlimBuilder(args);
 
-Console.WriteLine("Hello, World!");
+var app = builder.Build();
+
+app.Run();
